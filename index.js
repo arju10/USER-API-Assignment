@@ -16,7 +16,7 @@ connectDatabase();
 const user = require("./routes/userRoute");
 app.use("/user",user);
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Server is connected successfully')
 })
 
 app.listen(process.env.PORT, () => {
